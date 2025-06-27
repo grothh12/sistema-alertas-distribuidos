@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Alertas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-top"></div>
+    <div class="alertas-container">
+        <div class="left-panel">
+            <header class="left-header">
+                <h3>Sistema de Alertas</h3>
+            </header>
+            <div class="info-panel">
+                <p>Monitoramento de desastres em tempo real.</p>
+                <p>Todos os alertas são enviados para quem estiver online.</p>
+            </div>
+        </div>
+        
+        <div class="alert-window">
+            <header class="alert-header">
+                <p># Alertas</p>
+            </header>
+            <main id="alert-list" class="alert-list"></main>
+            <footer class="alert-input-area">
+                <form id="alert-form" class="alert-form">
+                    <input type="text" id="alert-type" placeholder="Tipo de alerta (ex: enchente)" required>
+                    <input type="text" id="alert-region" placeholder="Região" required>
+                    <input type="text" id="alert-message" placeholder="Mensagem" required>
+                    <button type="submit" class="send-button">Enviar</button>
+                </form>
+            </footer>
+        </div>
+    </div>
+    <div class="background-bottom"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
